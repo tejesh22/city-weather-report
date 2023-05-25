@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Information</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Weather Information</h1>
+    <p>City: {{ weather.city }}</p>
+    <p>Temperature: {{ weather.temperature }}°C</p>
+    <p>Weather Description: {{ weather.weather_desc }}</p>
+    <p>Humidity: {{ weather.humidity }}%</p>
+    <p>Wind Speed: {{ weather.wind_speed }} m/s</p>
+</body>
+</html>
